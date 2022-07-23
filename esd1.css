@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+body{
+    background-image: url("wallpaper.jpg");
+    font-family:sans-serif;
+    box-sizing:border-box;
+}
+.login-box{
+    border-radius: 20px;
+    padding: 7px;
+    margin: 7px 0;
+    width: 360px;
+    height: 400px;
+    margin: auto;
+    background-color: rgba(246, 252, 253, 0.877);
+    border-radius: 3px;
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+}
+.input-box
+{
+    border-radius: 15px;
+    padding: 7px;
+    margin: 7px 0;
+    width:90%;
+    border: 1px solid #999;
+    outline: none;
+
+
+}

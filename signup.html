@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>P-M Sign-up</title>
+<link rel="stylesheet" type="text/css" href="lab1.css">
+<script>
+            function validationform(){
+                var username=document.signup.username.value;
+                var email=document.signup.email.value;
+                var mobile_number=document.signup.mobile_number.value;
+                var pwd=document.signup.pwd.value;
+                var confirm_password=document.signup.confirm_password.value
+
+                if (username==null||username==""){
+                    alert("name cant be blank");
+                    return false;
+                } 
+                else if(email==null||email==""){
+                    alert("email cant be blank");
+                    return false;
+                }
+                else if(mobile_number.length<10){
+                    alert("please enter 10 digits");
+                    return false;
+                }
+                else if(pwd.length<6){
+                    alert("password must be at least 6 characters long.");
+                    return false;
+                }
+                else if(pwd!=confirm_password){
+                    alert("not")
+                    return false;
+                }
+            
+                else{
+                    open("log.html")
+                }
+            }
+        </script>
+
+        <style>
+            body {
+              background: url(wallpaper.jpg);
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+            }
+            </style>
+</head>
+<body>
+<div class="signup-box">
+<h1>Sign Up </h1>
+<form action="signup1" name="signup" method="post" onsubmit="return validationform()">
+<label>UserName:</label><input type="text" class="input-box" name="username"><br>
+<label>Email:</label><input type="email" class="input-box" name="email"><br>
+<label>Mobile No:</label><input type="text" class="input-box" name="mobile_number"><br>
+<label>Password:</label><br>
+<input type="password" class="input-box" name="pwd"><br>
+<label>Confirm Password:</label><input type="password" class="input-box" name="confirm_password"><br>
+<button type="submit" >Submit</button>
+<br>
+<p>Already have an account? <a href="log.html"> Login here </a></p>
+</form>
+</div>
+</body>
+</html>

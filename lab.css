@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: azure;
+  }
+  a:hover {
+    color: hotpink;
+  }
+  a.two:link {color:#ff0000;}
+a.two:visited {color:#0000ff;}
+a.two:hover {font-size:150%;}
+
+a.five:link {color:#ff0000;text-decoration:none;}
+a.five:visited {color:#0000ff;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
+  
+  
+  .bgimg {
+    background-image: url(wallpaper.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  .middle {
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+  }
+  hr {
+    margin: auto;
+    width: 55%;
+  }
+
+  

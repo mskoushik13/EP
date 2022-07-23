@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <script>
+            function validationform(){
+                var name=document.loginpage.name.value;
+                var password=document.loginpage.password.value;
+
+                if (name==null||name==""){
+                    alert("name cant be blank");
+                    return false;
+                }else if(password.length<6){
+                    alert("password must be at least 6 characters long.");
+                    return false;
+                }
+            }
+        </script>
+        <title> P-M LoginPage</title>
+        <link rel="stylesheet" type="text/css" href="esd1.css">
+        <style>
+            body {
+              background: url(wallpaper.jpg);
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+            }
+        </style>
+    </head>
+        <body>
+        <div class="login-box">
+            <h1>Login </h1>   
+            <form action="add1" name="loginpage" method="post" onsubmit="return validationform()">
+            <label>UserName:</label><input type="text" class="input-box" name="name">
+            <label>Password:</label>
+            <input type="password" class="input-box" name="password"><br><br>
+            <button type="submit" formaction="page-1.html">Submit</button>
+            <br>
+            <br>
+            </form>        
+            <a href="signup.html">Create an Account</a> 
+        </div>
+        </body>  
+</html>    
